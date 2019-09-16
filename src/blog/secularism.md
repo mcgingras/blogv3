@@ -2,6 +2,7 @@
 title: On Secularism
 date: September 1st, 2019
 path: /blog/secularism
+subtitle: How is the lack of religiosity in our generation contributing to the depression epedemic? How might we change this?
 ---
 I read a tweet today about a Priest who decided to step away from the church. His statements for leaving were totally valid, and I actually share many of his beliefs renouncing theology, but the responses he got worried me a bit when thinking about the state of 'religiosity' in America. It's not really a surprise at this point to hear church attendance is at an all time low. But depression, anxiety etc. are at an all time high. Why is this the case? While traditional religion is falling by the wayside, it's more important than ever for us as a community to at least embrace the dogma of religion, if not the story.
 
