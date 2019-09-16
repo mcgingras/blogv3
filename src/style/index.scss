@@ -1,0 +1,405 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #050526;
+}
+
+html{
+  font-size: 16px;
+  font-family: 'Helvetica';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transform: translate3d(0,0,0);
+  transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.full-height{
+  min-height: 100vh;
+  position: relative;
+}
+
+aside{
+  display: block;
+  width: 15%;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  position: absolute;
+  right: 5%;
+  margin-top: calc(-1.5em - 2px);
+  line-height: 1;
+}
+
+.aside-content {
+  color: rgba(5,5,38,.5);
+  font-size: .6em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+sup{
+    font-size: .75em;
+    letter-spacing: 0;
+    font-weight: normal;
+    line-height: 0;
+    position: relative;
+}
+
+.container{
+  max-width: 1470px;
+  width: 90.9090909091%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  padding-right: .75rem;
+  padding-left: .75rem;
+  box-sizing: border-box;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-offset-1{
+  margin-left: 8.33333333333%;
+}
+
+.col-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-4{
+  flex: 0 0 33.3333333%;
+  max-width: 33.333333%;
+}
+
+.col-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.content{
+  display: inline-block;
+  max-width: 50%;
+  flex: 0 0 50%;
+  margin-left: 25%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+}
+
+.content p{
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav{
+  background-color: inherit;
+  height: 4rem;
+  padding: 1rem 0;
+}
+
+.nav--item{
+  font-size: .6666666667em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav--item:not(:last-of-type){
+  margin-right: 2rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+a:hover{
+  opacity: .7;
+  transform: translate3d(0px,-3px,0px);
+}
+
+h2{ font-size: 8rem;}
+
+h5{
+  padding: 20rem 4rem 20rem 4rem;
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+footer{
+  max-width: 1470px;
+  width: 90.9090909091%;
+  border-top: 1px solid rgba(5, 32, 38, .2);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: .8;
+  font-weight: 800;
+  padding: 1rem 0;
+  margin-top: 4rem;
+  position: absolute;
+  bottom: 0;
+}
+
+img{
+  z-index: 100;
+}
+
+.hr-1{
+  margin: 0 auto 3rem auto;
+  height: 1px;
+  background-color: #050526;
+  border: none;
+  width: 93.33333333%;
+  max-width: 1470px;
+}
+
+.header{
+  background-color: #187BDD;
+  color: #050526;
+  position: relative;
+}
+
+.blog--header{
+  height: 600px;
+}
+
+.sticky{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.narrow{
+  background-color: white;
+}
+
+.mt-1{ margin-top: 1rem; }
+.mt-2{ margin-top: 2rem; }
+.mt-3{ margin-top: 3rem; }
+.mt-4{ margin-top: 4rem; }
+.mt-5{ margin-top: 5rem; }
+.mt-6{ margin-top: 6rem; }
+
+.mb-1{ margin-bottom: 1rem; }
+.mb-2{ margin-bottom: 2rem; }
+.mb-3{ margin-bottom: 3rem; }
+.mb-4{ margin-bottom: 4rem; }
+.mb-5{ margin-bottom: 5rem; }
+.mb-6{ margin-bottom: 6rem; }
+
+.pb-1{ padding-bottom: 1rem; }
+.pb-2{ padding-bottom: 2rem; }
+.pb-3{ padding-bottom: 3rem; }
+.pb-4{ padding-bottom: 4rem; }
+.pb-5{ padding-bottom: 5rem; }
+.pb-6{ padding-bottom: 6rem; }
+
+
+.post--header{
+  background: linear-gradient(180deg, #187BDD 7.22%, #C5F1CE 101.79%);
+  margin-bottom: 6rem;
+  padding-top: 6rem;
+}
+
+.blog--body{
+  background-color: #FDFDFD;
+}
+
+.blog--title{
+  font-family: 'Sporting Grotesque_Bold';
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: .75rem;
+}
+
+.blog--subtitle{
+  font-size: 1.25rem;
+}
+
+.header > h1 {
+  font-size: 12rem;
+  line-height: 12rem;
+  padding-top: 12rem;
+  font-family: 'Sporting Grotesque_Bold';
+  text-align: center;
+}
+
+
+.body--container{
+  overflow: auto;
+  background: linear-gradient(180deg, #187BDD 7.22%, #C5F1CE 101.79%);
+  height: 300px;
+}
+
+
+.post--container{
+  border-bottom: 1px solid rgba(5, 32, 38, .1);
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.post--container:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+.post--container p {
+  margin-right: 20%;
+}
+
+.post--container:last-child{
+  margin-bottom: 8rem;
+}
+
+.post--date{
+  color: rgba(5, 32, 38, .4);
+  font-size: 10px;
+}
+
+.post--title{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.table--header{
+  font-size: 16px;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(5, 32, 38, .15);
+  padding-bottom: 1rem;
+}
+
+.bg--white{
+  background-color: white;
+}
+
+
+.sporting-bold{
+  font-family: 'Sporting Grotesque_Bold';
+}
+
+.fs-med{
+  font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .header{
+    width: 100vw;
+    height: 30vh;
+    word-wrap: break-word;
+    padding-top: 5rem;
+  }
+
+  .header > h1{
+    padding-top: 4rem;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .themes p{
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .body{
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 24px;
+  }
+
+  .body--container{
+    padding: 1rem;
+  }
+
+  .themes{
+    margin: 2rem 0 3rem 0;
+    width: 90%;
+  }
+
+  h5{
+    font-size: 1.4rem;
+    position: relative;
+    padding: 0px 0px 200px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer{
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+
+  .post--title{
+    font-size: 16px;
+  }
+
+  .mob-col-0{
+    max-width: 0%;
+    flex: 0 0 0;
+  }
+
+  .mob-col-12{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .content{
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0rem;
+  }
+
+  .hide--mobile{
+    display: none;
+  }
+
+  /* used to hide images on mobile */
+  .extras{ width: 100px !important; }
+
+  .mobile--face{
+    top: 500px !important;
+    left: 50px !important;
+    width: 200px !important;
+  }
+
+}
