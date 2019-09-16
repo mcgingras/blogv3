@@ -6,7 +6,8 @@ media_folder: static/assets
 
 collections:
   - name: blog
-    folder: blog
+    folder: src/blog
+    label: blog
     create: true
     fields:
       - { name: path, label: Path }

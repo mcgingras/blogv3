@@ -13,6 +13,7 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/blog`,
+        name: 'markdown-pages',
       },
     },
     `gatsby-transformer-sharp`,
