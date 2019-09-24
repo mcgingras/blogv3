@@ -14,11 +14,12 @@ export default ({ data }) => {
           <hr className="hr-1" />
           <header className="container blog--header">
             <div className="row">
-              <div className="col col-4 col-offset-1 mob-col-0">
-              </div>
               <div className="col col-6 mob-col-12">
               <h2 className="blog--title">{post.frontmatter.title}</h2>
               <p className="blog--subtitle">{post.frontmatter.subtitle}</p>
+              <div className="blog--tags">
+                {/* <span className="blog--tags-tag">Tech</span> */}
+              </div>
               </div>
             </div>
           </header>
