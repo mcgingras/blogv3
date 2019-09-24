@@ -114,6 +114,10 @@ sup{
   margin-bottom: 1.5rem;
 }
 
+.content p:last-child{
+  margin-bottom: 6rem;
+}
+
 .nav{
   background-color: inherit;
   height: 4rem;
@@ -172,7 +176,7 @@ footer{
   align-items: flex-end;
   opacity: .8;
   font-weight: 800;
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin-top: 4rem;
   position: absolute;
   bottom: 0;
@@ -183,7 +187,7 @@ img{
 }
 
 .hr-1{
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 5rem auto;
   height: 1px;
   background-color: #050526;
   border: none;
@@ -198,7 +202,7 @@ img{
 }
 
 .blog--header{
-  // height: 600px;
+  height: 300px;
 }
 
 .blog--tags{
@@ -258,7 +262,7 @@ img{
 
 .blog--subtitle{
   font-size: 1.25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .header > h1 {
