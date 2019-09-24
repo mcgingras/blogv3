@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Michael Gingras Portfolio`,
-    description: `This is the personal website of Michael Gingras, a developer who makes lots of cool and useless web art but also works on serious things. Now at Nasdaq, Previously at IDEO CoLab.`,
+    description: `Trying my best not to drink the Kool-Aid. Currently pursuing independent research, exploring what is means to be a free learner, and writing along the way. Join me.`,
     author: `@michaelgingras`,
   },
   plugins: [
@@ -16,9 +16,7 @@ module.exports = {
         name: 'markdown-pages',
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

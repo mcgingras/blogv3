@@ -80,6 +80,11 @@ sup{
   margin-left: 8.33333333333%;
 }
 
+.col-2{
+  flex: 0 0 16.6666666%;
+  max-width: 16.666666%;
+}
+
 .col-12{
   flex: 0 0 100%;
   max-width: 100%;
@@ -277,10 +282,6 @@ img{
 .post--container:hover{
   opacity: .5;
   cursor: pointer;
-}
-
-.post--container p {
-  margin-right: 20%;
 }
 
 .post--container:last-child{

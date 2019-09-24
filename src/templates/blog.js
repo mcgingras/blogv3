@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Footer from "../components/footer"
 import StickyHeader from '../components/stickyHeader';
 
 export default ({ data }) => {
@@ -29,6 +30,7 @@ export default ({ data }) => {
               <section className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     </Layout>

@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import PostList from '../components/postList'
-import Image from "../components/image"
+import Footer from "../components/footer"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
@@ -26,8 +25,8 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           <PostList posts={posts} />
+          <Footer />
         </div>
-        {/*<Image />*/}
     </Layout>
   )
 }
