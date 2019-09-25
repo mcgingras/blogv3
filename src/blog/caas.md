@@ -1,6 +1,6 @@
 ---
 path: /blog/caas
-date: 'September 15th, 2019'
+date: 2019-09-15T04:02:29.980Z
 title: Curation As A Service
 subtitle: >-
   With the abundance of data being created each day, curating relevant content

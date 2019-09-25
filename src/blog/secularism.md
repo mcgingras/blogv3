@@ -1,6 +1,6 @@
 ---
 title: On Secularism
-date: September 1st, 2019
+date: 2019-09-01T04:02:29.980Z
 path: /blog/secularism
 subtitle: >-
   How is the lack of religiosity in our generation contributing to the depression epedemic? How might we change this?

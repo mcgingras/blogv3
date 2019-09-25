@@ -11,7 +11,7 @@ const postList = ({posts}) => {
         console.log(post);
         return (
           <a className="post--container" href={post.path}>
-          <p className="post--date col col-2">{post.date}</p>
+          <p className="post--date col col-2">{post.date.substring(0,10)}</p>
           <p className="post--title">{post.title}</p>
           </a>
         )
