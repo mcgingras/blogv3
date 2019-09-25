@@ -7,7 +7,7 @@ var elHeight		= 0,
 wScrollCurrent	= 0,
   wScrollBefore	= 0,
   wScrollDiff		= 0,
- elNarrowOffset = 48;
+ elNarrowOffset = 96;
 
 class StickyHeader extends React.Component {
 

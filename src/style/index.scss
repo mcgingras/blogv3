@@ -80,6 +80,10 @@ sup{
   margin-left: 8.33333333333%;
 }
 
+.col-offset-2{
+  margin-left: 16.6666666%;
+}
+
 .col-2{
   flex: 0 0 16.6666666%;
   max-width: 16.666666%;
@@ -98,6 +102,11 @@ sup{
 .col-6{
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.col-8{
+  flex: 0 0 66.666666%;
+  max-width: 66.66666%;
 }
 
 .content{
@@ -187,7 +196,7 @@ img{
 }
 
 .hr-1{
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 8rem auto;
   height: 1px;
   background-color: #050526;
   border: none;
@@ -199,10 +208,6 @@ img{
   background-color: #187BDD;
   color: #050526;
   position: relative;
-}
-
-.blog--header{
-  height: 300px;
 }
 
 .blog--tags{
@@ -218,7 +223,8 @@ img{
 }
 
 .narrow{
-  background-color: white;
+  background-color: #FBFBFDf;
+
 }
 
 .mt-1{ margin-top: 1rem; }
@@ -262,7 +268,7 @@ img{
 
 .blog--subtitle{
   font-size: 1.25rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .header > h1 {

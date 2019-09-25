@@ -12,9 +12,9 @@ export default ({ data }) => {
         <div className="post--header">
           <StickyHeader />
           <hr className="hr-1" />
-          <header className="container blog--header">
+          <header className="container">
             <div className="row">
-              <div className="col col-6 mob-col-12">
+              <div className="col col-offset-2 col-8 mob-col-12 text-center">
               <h2 className="blog--title">{post.frontmatter.title}</h2>
               <p className="blog--subtitle">{post.frontmatter.subtitle}</p>
               <div className="blog--tags">
