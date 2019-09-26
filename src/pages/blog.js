@@ -2,33 +2,28 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostList from '../components/postList'
+import StickyHeader from '../components/stickyHeader';
 import Footer from "../components/footer"
 import SEO from "../components/seo"
 
-import cool from '../images/cool.gif';
-
 const IndexPage = ({ data }) => {
 
+
   const posts = data.allMarkdownRemark.edges;
-  console.log(data);
 
   return (
     <Layout>
-      <SEO title="Home" />
-        <header className="header">
-          <img className="extras" src={cool} style={{position: 'absolute', left: '65%', top: '25%', width: "200px"}}/>
-          <h1>m's <br/> studio</h1>
-        </header>
-        <div className="body--container mb-6">
-        </div>
-        <div className="container bg--white">
-          <div className="row mb-6">
-            <div className="col-6 mob-col-12">
-              <p className="sporting-bold fs-med">{data.site.siteMetadata.description} <a href="/about" className="smallcaps">more</a></p>
-            </div>
+      <SEO title="Blogs" />
+        <div className="full-height">
+          <div className="post--header">
+            <StickyHeader />
+            <hr className="hr hr-4" />
           </div>
-          <PostList posts={posts} title="RECENT POSTS"/>
-          <Footer />
+
+          <div className="container">
+            <PostList posts={posts} title="ALL BLOG POSTS" />
+            <Footer />
+          </div>
         </div>
     </Layout>
   )

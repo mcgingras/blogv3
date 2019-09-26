@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from "gatsby"
 
 
-const postList = ({posts}) => {
+const postList = (props) => {
   return (
     <div className="pb-6">
-      <h6 className="table--header">BLOG POSTS</h6>
-      {posts.map((post) => {
+      <h6 className="table--header">{props.title}</h6>
+      {props.posts.map((post) => {
         post = post.node.frontmatter;
         console.log(post);
         return (
