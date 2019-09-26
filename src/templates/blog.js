@@ -11,7 +11,7 @@ export default ({ data }) => {
       <div className="full-height">
         <div className="post--header gradient--blue">
           <StickyHeader />
-          <hr className="hr-1" />
+          <hr className="hr hr-8" />
           <header className="container">
             <div className="row">
               <div className="col col-offset-2 col-8 mob-col-12 text-center">

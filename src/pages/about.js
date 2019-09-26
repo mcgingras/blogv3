@@ -6,19 +6,40 @@ import Footer from "../components/footer"
 import StickyHeader from '../components/stickyHeader';
 import SEO from "../components/seo"
 
+import head from '../images/headshot.jpg';
+
 const IndexPage = ({ data }) => {
 
   return (
     <Layout>
       <SEO title="About" />
-        <div className="full-height">
+        <div className="post--header">
           <StickyHeader />
-          <hr className="hr-1" />
-          <div className="container post--header">
-            <h1 className="sporting-bold">About Michael</h1>
-            <Img fluid={data.file.childImageSharp.fluid} />
+          <hr className="hr hr-4" />
+        </div>
+
+        <div className="container">
+          <h1 className="sporting-bold pb-4">About Michael</h1>
+          <img src={head} className="pb-6 img-bw" />
+          {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
+
+
+            <div className="row">
+              <div className="col-12 mb-6">
+                <section className="content">
+                  <p>Hello! My name is Michael Gingras. I studied Computer Science at Cornell, then did the thing most CS grads do (got a job as a software engineer...)
+                    After spending a year feeling like the work I was producing wasn't quite satsifying me in the way it needed to, I left to pursue independent projects, and to figure out what it is I want to do with the rest my life.
+                    I strongly beleive we make career decisions too early in our lives, and are dangerously stuck living out those decisions for the remainder of our careers. It's silly how we let
+                    the 18 year old versions of ourselves decide what's best.
+                  </p>
+
+                  <p>
+                    I'm broadly interested in quite a few subjects, so here you will find writing about education, interfaces, cities, ventures, and whatever else I find interesting.
+                  </p>
+                </section>
+              </div>
+            </div>
             <Footer />
-          </div>
         </div>
     </Layout>
   )

@@ -15,11 +15,11 @@ wScrollCurrent	= 0,
 
    const data = useStaticQuery(graphql`
      query LogoQuery {
-       file(relativePath: { eq: "logo.png" }) {
+       file(relativePath: { eq: "logo2.png" }) {
          childImageSharp {
            # Specify the image processing specifications right in the query.
            # Makes it trivial to update as your page's design changes.
-           fixed(width: 50) {
+           fixed(width: 150) {
              ...GatsbyImageSharpFixed_noBase64
            }
          }
@@ -98,9 +98,10 @@ wScrollCurrent	= 0,
         <div className='container flex space-between align-center nav'>
           <a href="/"><Img fixed={data.file.childImageSharp.fixed} /></a>
           <div className="flex space-between hide--mobile">
-            <a href="/blog" className="nav--item">Blog</a>
             <a href="/about" className="nav--item">About</a>
-            <a href="/map" className="nav--item">Map (beta)</a>
+            <a href="/blog" className="nav--item">Blog</a>
+            {/* map -- make an interesting representation of content */}
+            {/* <a href="/map" className="nav--item">Map (beta)</a> */}
           </div>
         </div>
       </div>

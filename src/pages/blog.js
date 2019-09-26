@@ -15,9 +15,12 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Blogs" />
         <div className="full-height">
-          <StickyHeader />
-          <hr className="hr-1" />
-          <div className="container post--header">
+          <div className="post--header">
+            <StickyHeader />
+            <hr className="hr hr-4" />
+          </div>
+
+          <div className="container">
             <PostList posts={posts} title="ALL BLOG POSTS" />
             <Footer />
           </div>
