@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostList from '../components/postList'
+import StickyHeader from '../components/stickyHeader';
 import Footer from "../components/footer"
 import SEO from "../components/seo"
 
@@ -12,20 +13,14 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
-        <header className="header">
-          <h1>m's <br/> studio</h1>
-        </header>
-        <div className="body--container mb-6">
-        </div>
-        <div className="container bg--white">
-          <div className="row mb-6">
-            <div className="col-6 mob-col-12">
-              <p className="sporting-bold fs-med">{data.site.siteMetadata.description} <a href="/about" className="nav--item">more</a></p>
-            </div>
+      <SEO title="Blogs" />
+        <div className="full-height">
+          <StickyHeader />
+          <hr className="hr-1" />
+          <div className="container post--header">
+            <PostList posts={posts} title="ALL BLOG POSTS" />
+            <Footer />
           </div>
-          <PostList posts={posts} title="RECENT POSTS"/>
-          <Footer />
         </div>
     </Layout>
   )

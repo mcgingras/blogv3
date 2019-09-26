@@ -1,5 +1,5 @@
 ---
-path: /perfection
+path: /blog/perfection
 date: 2019-09-25T04:02:29.980Z
 title: Websites as Identity
 subtitle: What do our websites have to say about ourselves?

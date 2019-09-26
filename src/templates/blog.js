@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div className="full-height">
-        <div className="post--header">
+        <div className="post--header gradient--blue">
           <StickyHeader />
           <hr className="hr-1" />
           <header className="container">

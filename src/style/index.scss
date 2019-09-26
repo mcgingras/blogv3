@@ -191,6 +191,10 @@ footer{
   bottom: 0;
 }
 
+.footer--item{
+  margin-left: .5rem;
+}
+
 img{
   z-index: 100;
 }
@@ -223,7 +227,8 @@ img{
 }
 
 .narrow{
-  background-color: #FBFBFDf;
+  background-color: #FBFBFD;
+  border-bottom: 1px solid black;
 
 }
 
@@ -249,8 +254,11 @@ img{
 .pb-6{ padding-bottom: 6rem; }
 
 
-.post--header{
+.gradient--blue{
   background: linear-gradient(180deg, #187BDD 7.22%, #C5F1CE 101.79%);
+}
+
+.post--header{
   margin-bottom: 6rem;
   padding-top: 6rem;
 }
