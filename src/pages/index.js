@@ -3,6 +3,9 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import  hs  from '../images/hs.png';
 
+import "../style/index.scss"
+import "../style/font.scss";
+
 const IndexPage = ({ data }) => {
 
   return (
