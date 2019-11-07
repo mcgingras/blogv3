@@ -1,8 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
 import PostList from '../components/postList'
 import SEO from "../components/seo"
+
+import "../style/index.scss"
+import "../style/font.scss";
 
 const IndexPage = ({ data }) => {
 
@@ -10,7 +12,7 @@ const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout>
+    <div>
       <SEO title="Blogs" />
         <div className="full-height">
           <div className="post--header">
@@ -21,7 +23,7 @@ const IndexPage = ({ data }) => {
             <PostList posts={posts} title="ALL BLOG POSTS" />
           </div>
         </div>
-    </Layout>
+    </div>
   )
 }
 

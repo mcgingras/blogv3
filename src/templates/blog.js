@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
 
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <Layout>
+    <div>
       <div className="full-height">
         <div className="post--header gradient--blue">
           <hr className="hr hr-8" />
@@ -31,7 +30,7 @@ export default ({ data }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
