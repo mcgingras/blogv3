@@ -2,8 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
-import StickyHeader from '../components/stickyHeader';
 import SEO from "../components/seo"
 
 import head from '../images/headshot.jpg';
@@ -14,7 +12,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="About" />
         <div className="post--header">
-          <StickyHeader />
           <hr className="hr hr-4" />
         </div>
 
@@ -39,7 +36,6 @@ const IndexPage = ({ data }) => {
                 </section>
               </div>
             </div>
-            <Footer />
         </div>
     </Layout>
   )
