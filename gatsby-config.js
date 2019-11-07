@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Michael Gingras Portfolio`,
-    description: `Trying my best not to drink the Kool-Aid. Currently pursuing independent research, exploring what is means to be a free learner, and writing along the way. Join me.`,
+    description: `Michael's Studio. My lil home on the internet. Collecting all my thoughts, projects, etc. so anyone who might be interested in seeing what I am up to can come and have a peek. I'm currently in-between 'real' jobs, taking a mini sabbatical to figure out where my life needs to flow.`,
     author: `@michaelgingras`,
   },
   plugins: [

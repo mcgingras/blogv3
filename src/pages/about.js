@@ -1,26 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
-import Footer from "../components/footer"
-import StickyHeader from '../components/stickyHeader';
 import SEO from "../components/seo"
-
-import head from '../images/headshot.jpg';
 
 const IndexPage = ({ data }) => {
 
   return (
-    <Layout>
+    <div>
       <SEO title="About" />
         <div className="post--header">
-          <StickyHeader />
           <hr className="hr hr-4" />
         </div>
 
         <div className="container">
           <h1 className="sporting-bold pb-4">About Michael</h1>
-          <img src={head} className="pb-6 img-bw" />
+          {/* <img src={head} className="pb-6 img-bw" /> */}
           {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
 
 
@@ -39,9 +33,8 @@ const IndexPage = ({ data }) => {
                 </section>
               </div>
             </div>
-            <Footer />
         </div>
-    </Layout>
+    </div>
   )
 }
 

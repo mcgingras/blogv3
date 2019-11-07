@@ -1,16 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Footer from "../components/footer"
-import StickyHeader from '../components/stickyHeader';
+
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <Layout>
+    <div>
       <div className="full-height">
         <div className="post--header gradient--blue">
-          <StickyHeader />
           <hr className="hr hr-8" />
           <header className="container">
             <div className="row">
@@ -31,10 +28,9 @@ export default ({ data }) => {
               <section className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </div>
-          <Footer />
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
