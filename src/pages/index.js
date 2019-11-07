@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import  hs  from '../images/hs.png';
+import hs from '../images/hs.png';
+import smile from '../images/smile.png';
 
 import "../style/index.scss"
 import "../style/font.scss";
@@ -12,7 +13,10 @@ const IndexPage = ({ data }) => {
     <div>
       <SEO title="Home" />
         <div className="container">
-          <p className="">{data.site.siteMetadata.description}</p>
+          <div className="container--title">
+           <p className="">{data.site.siteMetadata.description}</p>
+            <img src={smile} />
+          </div>
           <div className="container--img">
             <img src={hs} />
           </div>
