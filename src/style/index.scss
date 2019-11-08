@@ -55,10 +55,11 @@ html{
 
   .container{
     display: block;
+    height: 100vh;
   }
 
   .container--img{
-    height: 100%;
+    height: unset;
     position: unset;
 
     img{
