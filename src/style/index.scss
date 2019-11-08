@@ -10,7 +10,6 @@ html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.25;
-  min-height: 100vh;
 }
 
 .container{
@@ -49,13 +48,15 @@ html{
 
 @media only screen and (max-width: 600px) {
 
-  body{
+  html, body {
+    height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E4E4E4 55%);
   }
 
   .container{
-    display: block;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .container--img{
@@ -69,6 +70,8 @@ html{
   }
 
   .container--title{
+
+    padding: .5rem;
 
     img{
       bottom: -2rem;

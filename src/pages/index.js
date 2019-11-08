@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
-      <SEO title="Home" />
+      {/* <SEO title="Home" /> */}
         <div className="container">
           <div className="container--title">
            <p className="">{data.site.siteMetadata.description}</p>
