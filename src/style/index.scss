@@ -1,7 +1,14 @@
+$padding--main: 4rem;
+$padding--sub: 1rem;
+$color--text: #2c2c2c;
+
+$fadeout: 2s;
+$fadein: .2s;
+
 *{
   margin: 0;
   padding: 0;
-  color: #2C2C2C;
+  color: $color--text;
 }
 
 html{
@@ -12,45 +19,129 @@ html{
   line-height: 1.25;
 }
 
+p{
+-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 1s; /* Firefox < 16 */
+ -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+     animation: fadein 1s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
+.logo{
+  display: inline;
+}
+
 .container{
   display: flex;
   font-family: 'GT-Cinetype';
 }
 
+.big{flex: 2}
+.small{flex: 1}
+
 .container--title{
-  flex: 1;
-  padding: .5rem;
+  padding: $padding--main;
   display: flex;
   flex-direction: column;
   position: relative;
-
-  img{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    bottom: .5rem;
+  
+  p{
+    margin-bottom: $padding--sub;
   }
 }
 
 .container--img{
+  height: calc(100vh - 2*#{$padding--main});
+  padding: $padding--main;
+  background: url('../images/hs.png');
   background-color: #E4E4E4;
-  height: 100vh;
-  flex: 2;
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
 
-  img{
-    position: absolute;
-    bottom: 0;
+.container--img-faded{
+  background: 'white';
+  height: calc(100vh - 2*#{$padding--main});
+  padding: $padding--main;
+  overflow: scroll;
+}
+
+.container--blog{
+  background-color: #E4E4E4;
+  height: calc(100vh - 2*#{$padding--main});
+  padding: $padding--main;
+}
+
+.post--container{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+
+  p{
+    transition: color $fadeout ease-in-out;
+    -moz-transition: color $fadeout ease-in-out;
+    -webkit-transition: color $fadeout ease-in-out;
   }
+
+  &:hover p{
+    transition: color .01s ease-in-out;
+    -moz-transition: color .01s ease-in-out;
+    -webkit-transition: color .01s ease-in-out;
+  }
+
+
+  &:hover .CornflowerBlue{ color: cornflowerblue }
+  &:hover .SlateGrey{ color: slategrey }
+  &:hover .SlateBlue{ color: slateblue }
+  &:hover .Navy{ color: navy }
+  &:hover .RosyBrown{ color: rosybrown }
+  &:hover .Orange{ color: orange }
+  &:hover .SeaGreen{ color: seagreen }
+  &:hover .DarkGoldenRod{ color: darkgoldenrod }
+  &:hover .DarkRed{ color: darkred }
+  &:hover .ForestGreen{ color: forestgreen }
+  &:hover .OrangeRed{ color: orangered }
+
 }
 
 
 
+.footer{
+  position: absolute;
+  bottom: $padding--main;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+
+  img{
+    height: 40px;
+    width: 40px;
+  }
+
+  button{
+    font-size: 16px;
+    padding: .2rem .5rem;
+    margin: 0 .1rem 0 0;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    background: white;
+    color: $color--text;
+    border: .5px solid $color--text;
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
 
-  html, body {
-    height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E4E4E4 55%);
+  .post--container{
+    font-size: 14px;
   }
 
   .container{
@@ -59,24 +150,7 @@ html{
     height: 100%;
   }
 
-  .container--img{
-    height: unset;
-    position: unset;
 
-    img{
-      max-width: 100%;
-      bottom: 0;
-    }
-  }
-
-  .container--title{
-
-    padding: .5rem;
-
-    img{
-      bottom: -2rem;
-    }
-  }
   
 
 }

@@ -1,16 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 
+const PostList = (props) => {
 
-const postList = (props) => {
+  const colorList = [
+    'CornflowerBlue',
+    'SlateGrey',
+    'SteelBlue',
+    'Navy',
+    'RosyBrown',
+    'Orange',
+    'SeaGreen',
+    'DarkGoldenRod',
+    'DarkRed',
+    'ForestGreen',
+    'OrangeRed'
+  ]
+
   return (
-    <div className="pb-6">
-      <h6 className="table--header">{props.title}</h6>
-      {props.posts.map((post) => {
+    <div>
+      {props.posts.map((post, i) => {
         post = post.node.frontmatter;
+        const color = colorList[Math.floor(Math.random()*colorList.length)]
         return (
-          <a className="post--container" href={post.path}>
-          <p className="post--date col col-2">{post.date.substring(0,10)}</p>
-          <p className="post--title">{post.title}</p>
+          <a 
+            className='post--container'
+            href={post.path}>
+              <p className={color}>{post.date.substring(0,10)}</p>
+              <p className={color}>{post.title}</p>
+              <p className={color}>(blog)</p>
           </a>
         )
       })}
@@ -18,4 +35,4 @@ const postList = (props) => {
   )
 }
 
-export default postList;
+export default PostList;
