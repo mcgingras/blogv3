@@ -70,6 +70,7 @@ export const query = graphql`
           frontmatter {
             title
             date
+            tags
             path
           }
           excerpt

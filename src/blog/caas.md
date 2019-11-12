@@ -2,10 +2,7 @@
 path: /blog/caas
 date: 2019-09-15T04:02:29.980Z
 title: Curation As A Service
-subtitle: >-
-  With the abundance of data being created each day, curating relevant content
-  is becoming increasingly difficult. How much new businesses be created around
-  effective curation?
+tags: blog
 ---
 We live in the age of data. I'm not even going to pretend like I know the amount of data that is generated per day, and I'm too lazy to look up the actual number, but one thing is for certain -- its a lot. Alongside this data is an explosion of content. Personal computing devices have made it easier than ever for anybody in the world to become a musician (via Soundcloud), an internet star (via youtube) or even just to consume copious amounts of material like they never have before. Commercials are a thing of the past. You can binge watch entire seasons of shows if you want to. The ironic thing about all of this content is that sometimes it can be suffocating. I am sure many people can relate to the feeling of opening up Netflix and having 'absolutely nothing' to watch. With so many options, how do you find what you want?
 

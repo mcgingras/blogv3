@@ -2,12 +2,7 @@
 path: /blog/indirect-curation
 date: 2019-09-16T01:32:39.742Z
 title: Indirect Curation
-subtitle: >-
-  In the past, I've written about Curation as a Service, an offering in which
-  someone or something would get to know your personal preferences, and would
-  recommend new content for you. In this post I will describe a new approach -
-  one I am calling "indirect curation" for it's ability to curate without any
-  one actor realizing they are contributing to the overall curatorial effort.
+tags: blog
 ---
 In the past, I've written about Curation as a Service, an offering in which someone or something would get to know your personal preferences, and would recommend new content \*for you\*. In this post I will describe a new approach - one I am calling "indirect curation" for it's ability to curate without any one actor realizing they are contributing to the overall curatorial effort.
 

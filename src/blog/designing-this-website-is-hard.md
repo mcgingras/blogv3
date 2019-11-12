@@ -2,7 +2,7 @@
 path: /blog/perfection
 date: 2019-09-25T04:02:29.980Z
 title: Websites as Identity
-subtitle: What do our websites have to say about ourselves?
+tags: blog
 ---
 I'm on my 14th iteration of this website. It is my portfolio -- the public facing version of my internet self. Over the years I've plucked away, spending hours tweaking it's design, only to scrape it all weeks later for something completely new. Why is it so difficult for me to land on something I like? As a web designer/developer, I believe it has much to do with our websites serving as some sort of identity within us. We use these as reflections of ourselves in order to present our style, our interests, our work. When someone visits our website it's as if they are stepping into our digital home. Naturally, it's important to leave a good impression.
 

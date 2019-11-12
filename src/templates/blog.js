@@ -7,8 +7,9 @@ import "../style/font.scss";
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  var newDate = new Date(post.frontmatter.date.split(' ')[0]);
-  console.log(newDate);
+  const newDate = new Date(post.frontmatter.date.split(' ')[0]);
+  console.log(post);
+  
   
   return (
     <div>
@@ -32,7 +33,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        subtitle
+        tags
         date
       }
     }
