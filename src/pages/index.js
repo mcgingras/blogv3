@@ -39,11 +39,12 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
         <div className="container">
           <div className="container--title small">
-            {/* <p>Michael's Studio</p> */}
             <p className="logo--container">
               {renderStringWithCOLOR("Michael's Studio")}
             </p>
-            <p>Currently on a mini sabbatical doing small research projects in a great effort to figure out where my life needs to flow.</p>
+            <p>On a mini sabbatical doing small research projects in a great effort to figure out where my life needs to flow.</p>
+            <p><em>Currently: Computational Creativity</em></p>
+            <p>Purusing research in the domain of computational creativity, especially from the lens of how we can enable humans to feel creative through the act of computing</p>
           </div>
           <div className='container--img-faded big'>
             <PostList posts={posts} /> 
