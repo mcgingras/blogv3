@@ -1,6 +1,7 @@
 $padding--main: 4rem;
 $padding--sub: 1rem;
 $color--text: #2c2c2c;
+$color--sun: #FF4503;
 
 $fadeout: 2s;
 $fadein: .2s;
@@ -13,80 +14,73 @@ $fadein: .2s;
 
 html{
   font-size: 16px;
-  font-family: 'Helvetica';
+  font-family: 'GT-Cinetype';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.25;
-}
-
-p{
--webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
--moz-animation: fadein 1s; /* Firefox < 16 */
- -ms-animation: fadein 1s; /* Internet Explorer */
-  -o-animation: fadein 1s; /* Opera < 12.1 */
-     animation: fadein 1s;
-}
-
-@keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
-}
-
-
-.logo{
-  display: inline;
-}
-
-.container{
-  display: flex;
-  font-family: 'GT-Cinetype';
-}
-
-.big{flex: 2}
-.small{flex: 1}
-
-.container--title{
   padding: $padding--main;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  
+}
+
+h1{
+  font-size: 4vmax;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.half{
+  max-width: 50%;
+
   p{
-    margin-bottom: $padding--sub;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    opacity: .9;
+  }
+
+  a{
+    text-decoration: none;
+    color: #FF4503;
+    &:hover{
+      border-bottom: 1px #FF4503 dashed;
+    }
   }
 }
 
-.container--img{
-  height: calc(100vh - 2*#{$padding--main});
-  padding: $padding--main;
-  background: url('../images/hs.png');
-  background-color: #E4E4E4;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+.divider{ 
+  border-top: 1px;
+  border-color: #808080;
+  border-style: dashed;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.container--img-faded{
-  background: 'white';
-  height: calc(100vh - 2*#{$padding--main});
-  padding: $padding--main;
-  overflow: scroll;
-}
+// p{
+// -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+// -moz-animation: fadein 1s; /* Firefox < 16 */
+//  -ms-animation: fadein 1s; /* Internet Explorer */
+//   -o-animation: fadein 1s; /* Opera < 12.1 */
+//      animation: fadein 1s;
+// }
 
-.container--blog{
-  background-color: #E4E4E4;
-  height: calc(100vh - 2*#{$padding--main});
-  padding: $padding--main;
+// @keyframes fadein {
+// from { opacity: 0; }
+// to   { opacity: 1; }
+// }
+
+.post--container--header{
+  display: flex;
+  text-decoration: none;
 }
 
 .post--container{
   display: flex;
-  justify-content: space-between;
   text-decoration: none;
 
   p{
     transition: color $fadeout ease-in-out;
     -moz-transition: color $fadeout ease-in-out;
     -webkit-transition: color $fadeout ease-in-out;
+    font-size: 1rem;
+    opacity: .9;
   }
 
   &:hover p{
@@ -95,7 +89,7 @@ to   { opacity: 1; }
     -webkit-transition: color .01s ease-in-out;
   }
 
-
+  &:hover .Sun {color: $color--sun }
   &:hover .CornflowerBlue{ color: cornflowerblue }
   &:hover .SlateGrey{ color: slategrey }
   &:hover .SlateBlue{ color: slateblue }
@@ -110,47 +104,55 @@ to   { opacity: 1; }
 
 }
 
-
-
-.footer{
-  position: absolute;
-  bottom: $padding--main;
-  display: flex;
-  align-items: center;
+footer{
   bottom: 0;
+  display: flex;
+  flex-direction: row;
 
-  img{
-    height: 40px;
-    width: 40px;
-  }
+  a{
+    text-decoration: none;
+    margin-right: 1rem;
+    border-bottom: none;
+    opacity: .9;
 
-  button{
-    font-size: 16px;
-    padding: .2rem .5rem;
-    margin: 0 .1rem 0 0;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 10px;
-    background: white;
-    color: $color--text;
-    border: .5px solid $color--text;
+    &:hover{
+      border-bottom: 1px #FF4503 dashed;
+      opacity: 1;
+    }
   }
 }
 
+.mobile-only{
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
 
+  html{
+    padding: 2rem;
+  }
+
+  .half{
+    max-width: 100%;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+
+  .divider{ 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .post--container{
-    font-size: 14px;
+    p{
+      margin-top: 1rem;
+    }
   }
-
-  .container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-
   
-
 }
