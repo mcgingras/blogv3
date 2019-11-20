@@ -8,22 +8,35 @@ import React from 'react';
 const PostList = (props) => {
 
   const colorList = [
-    'CornflowerBlue',
-    'SlateGrey',
-    'SteelBlue',
-    'Navy',
-    'RosyBrown',
-    'Orange',
-    'SeaGreen',
-    'DarkGoldenRod',
-    'DarkRed',
-    'ForestGreen',
-    'OrangeRed'
+    'Sun'
+    // 'CornflowerBlue',
+    // 'SlateGrey',
+    // 'SteelBlue',
+    // 'Navy',
+    // 'RosyBrown',
+    // 'Orange',
+    // 'SeaGreen',
+    // 'DarkGoldenRod',
+    // 'DarkRed',
+    // 'ForestGreen',
+    // 'OrangeRed'
   ]
 
 
+  props.posts.sort(function(a,b){
+    return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date);
+  });
+
+
   return (
+    
     <div>
+      <div className='post--container--header'>
+        <p className='desktop-only' style={{flex: 1}}>Date</p>
+        <p className='desktop-only' style={{flex: 2}}>Title</p>
+        <p className='desktop-only' style={{flex: 1}}>Type</p>
+        <p className='mobile-only' style={{flex: 1}}>Recent Posts</p>
+      </div>
       {props.posts.map((post, i) => {
         post = post.node.frontmatter;
         const color = colorList[Math.floor(Math.random()*colorList.length)]
@@ -32,9 +45,9 @@ const PostList = (props) => {
           <a 
             className='post--container'
             href={post.path}>
-              <p className={color}>{newDate.toString().substring(3,15)}</p>
-              <p className={color}>{post.title}</p>
-              <p className={color}>({post.tags})</p>
+              <p style={{flex: 1}} className={color, 'desktop-only'}>{newDate.toString().substring(3,15)}</p>
+              <p style={{flex: 2}} className={color}>{post.title}</p>
+              <p style={{flex: 1}} className={color, 'desktop-only'}>({post.tags})</p>
           </a>
         )
       })}
