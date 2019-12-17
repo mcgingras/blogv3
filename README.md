@@ -9,3 +9,6 @@ inspiration from that are.na browsing tool thing
 
 Articles I like
 http://michaelnielsen.org/blog/archive/tough-learning/tough-learning-final.html
+
+good colors
+https://www.wedge.work/project/the-world-of-letters-fr

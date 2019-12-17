@@ -45,9 +45,9 @@ const PostList = (props) => {
           <a 
             className='post--container'
             href={post.path}>
-              <p style={{flex: 1}} className={color, 'desktop-only'}>{newDate.toString().substring(3,15)}</p>
+              <p style={{flex: 1}} className={`${color} desktop-only`}>{newDate.toString().substring(3,15)}</p>
               <p style={{flex: 2}} className={color}>{post.title}</p>
-              <p style={{flex: 1}} className={color, 'desktop-only'}>({post.tags})</p>
+              <p style={{flex: 1}} className={`${color} desktop-only`}>({post.tags})</p>
           </a>
         )
       })}

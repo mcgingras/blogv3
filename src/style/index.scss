@@ -1,7 +1,13 @@
 $padding--main: 4rem;
 $padding--sub: 1rem;
-$color--text: #2c2c2c;
 $color--sun: #FF4503;
+
+$beer-bg: #D9CAA6;
+$beer-text: #235B5D;
+$c1-bg: #EFEBE5;
+$c1-font: #2c2c2c;
+$c2-bg: #02B3F3;
+$c2-text: #F8EB4F;
 
 $fadeout: 2s;
 $fadein: .2s;
@@ -9,7 +15,7 @@ $fadein: .2s;
 *{
   margin: 0;
   padding: 0;
-  color: $color--text;
+  color: $c1-font;
 }
 
 html{
@@ -19,9 +25,11 @@ html{
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.25;
   padding: $padding--main;
+  background-color: $c1-bg;
 }
 
 h1{
+  font-family: 'GT-Cinetype';
   font-size: 4vmax;
   padding-bottom: 1rem;
   font-weight: 400;
@@ -116,7 +124,7 @@ footer{
     opacity: .9;
 
     &:hover{
-      border-bottom: 1px #FF4503 dashed;
+      border-bottom: 1px $color--sun dashed;
       opacity: 1;
     }
   }
