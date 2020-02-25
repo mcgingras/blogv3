@@ -1,5 +1,5 @@
 ---
-path: womp-womp-css
+path: /blog/womp-womp-css
 date: 2020-02-25T20:01:05.740Z
 title: 'Design Systems in CSS: They are Hard!'
 tags: blog
