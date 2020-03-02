@@ -1,7 +1,7 @@
 ---
 path: /blog/react-spring-is-the-bomb
 date: 2020-02-25T20:01:05.740Z
-title: How The Heck Does React Spring Work? ?? ?
+title: How The Heck Does React Spring Work?
 tags: blog
 ---
 React Spring is a wonderful library. Here I will share some tips and tricks, and even try to look into how this magical library works from the inside.
